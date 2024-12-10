@@ -1,0 +1,12 @@
+[Unit]
+Description=Automatic Firewall Management for Subtext BBS
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/subtext-filter
+Type=exec
+User=root
+
+[Install]
+WantedBy=default.target
+
